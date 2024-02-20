@@ -1,0 +1,17 @@
+@import "./colors/colors.scss";
+@import "./pages/home.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  background-color: $dark-20;
+}
+
+button {
+  cursor: pointer;
+}
