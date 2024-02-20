@@ -156,7 +156,6 @@ h3 {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
 
   & h3 {
     margin-bottom: 4rem;
@@ -172,19 +171,23 @@ h3 {
   gap: 4rem;
 }
 
-.card {
-  padding: 1rem;
-  background-color: $dark-30;
-  width: 350px;
-  height: 200px;
-  gap: 2rem;
-}
+
 
 .container-project {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+
+.card {
+  padding: 1rem;
+  background-color: $dark-30;
+  width: 350px;
+  height: 200px;
+  border: 1px solid $dark-40;
 }
 
 .card {
@@ -193,6 +196,13 @@ h3 {
   gap: 10px;
   flex-direction: column;
   padding: 1.5rem;
+
+  & a {
+    background-color: red;
+    height: 100%;
+  }
+
+  & img {}
 
   & h5 {
     background-color: $dark-30;

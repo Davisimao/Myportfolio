@@ -14,6 +14,7 @@ header {
   display: flex;
   gap: 2rem;
 }
+
 .nav-itens a {
   text-decoration: none;
   color: #E0E0E0;
@@ -28,6 +29,7 @@ a {
   justify-content: space-evenly;
   margin: 6rem 0;
 }
+
 .first-apresent h1 {
   font-weight: 700;
   font-size: 2rem;
@@ -41,15 +43,18 @@ a {
   gap: 1rem;
   height: auto;
 }
+
 .prev-apresent p {
   color: #828282;
 }
+
 .prev-apresent a {
   padding: 1rem;
   border-radius: 0.3rem;
   background-color: transparent;
   color: #E0E0E0;
 }
+
 .prev-apresent .contact {
   padding: 1rem;
   border-radius: 0.3rem;
@@ -62,6 +67,7 @@ a {
   display: flex;
   gap: 1rem;
 }
+
 .buttons-apresent .download {
   border: none;
   color: #333333;
@@ -76,6 +82,7 @@ a {
   justify-content: center;
   gap: 2rem;
 }
+
 .about-me .about {
   width: 745px;
   height: 160px;
@@ -105,9 +112,11 @@ h3 {
   justify-content: center;
   margin-bottom: 10rem;
 }
+
 .container-icons img {
   width: 2.7rem;
 }
+
 .container-icons .icons {
   display: flex;
   flex-direction: column;
@@ -115,16 +124,19 @@ h3 {
   align-items: center;
   gap: 1rem;
 }
+
 .container-icons .icons h2 {
   color: #E0E0E0;
   font-weight: 700;
   letter-spacing: 0em;
   text-align: left;
 }
+
 .container-icons .icons p {
   color: #828282;
   font-weight: 400;
 }
+
 .container-icons .icons a {
   color: #828282;
 }
@@ -134,8 +146,8 @@ h3 {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
 }
+
 .title-about-me h3 {
   margin-bottom: 4rem;
   font-size: 28px;
@@ -149,19 +161,20 @@ h3 {
   gap: 4rem;
 }
 
-.card {
-  padding: 1rem;
-  background-color: #333333;
-  width: 350px;
-  height: 200px;
-  gap: 2rem;
-}
-
 .container-project {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  padding: 1rem;
+  background-color: #333333;
+  width: 350px;
+  height: 200px;
+  border: 1px solid #828282;
 }
 
 .card {
@@ -171,6 +184,12 @@ h3 {
   flex-direction: column;
   padding: 1.5rem;
 }
+
+.card a {
+  background-color: red;
+  height: 100%;
+}
+
 .card h5 {
   background-color: #333333;
   font-size: 18px;
@@ -179,6 +198,7 @@ h3 {
   text-align: left;
   color: #E0E0E0;
 }
+
 .card p {
   background-color: #333333;
   font-size: 14px;
