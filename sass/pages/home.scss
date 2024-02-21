@@ -19,6 +19,13 @@ header {
     text-decoration: none;
     color: $support-05;
   }
+
+  & a:hover {
+    color: $brand-color;
+    text-decoration: underline;
+    transition: 1.3s;
+
+  }
 }
 
 a {
@@ -276,4 +283,30 @@ h3 {
   }
 
 
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  background-color: $dark-30;
+
+  & p {
+    background-color: $dark-30;
+    color: $support-05;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0em;
+
+
+
+
+  }
+
+  & a {
+    color: $brand-color;
+    background-color: $dark-30;
+    font-weight: 500;
+  }
 }
