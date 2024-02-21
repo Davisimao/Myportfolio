@@ -10,6 +10,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz@0,9..40;1,9..40&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+
+  <!-- AOS LIB -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- css -->
   <link rel="stylesheet" href="css/style.css">
   <title>Portfólio</title>
 </head>
@@ -30,7 +35,7 @@
   </header>
   <main>
     <section class="first-apresent">
-      <div class="prev-apresent">
+      <div data-aos="fade-right" data-aos-duration="2000" class=" prev-apresent">
         <h1>Olá, eu sou o Davi Sanches :) </h1>
         <p>Desenvolvedor Front-End & UI Designer</p>
         <div class="buttons-apresent">
@@ -38,12 +43,12 @@
           <button class="contact"><a href="https://wa.me/+5511943049474" target="_blank">Entrar em contato</a></button>
         </div>
       </div>
-      <div>
+      <div data-aos="fade-left" data-aos-duration="2000">
         <img src="./assets/img-apresent.svg" alt="imagem de apresentação">
       </div>
     </section>
     <section>
-      <div class="about-me">
+      <div class="about-me" data-aos="fade-up" data-aos-duration="3000">
 
         <h3 class="title-about-me">Sobre mim</h3>
         <p class="about">Com entusiasmo e determinação, almejo ingressar no campo do Desenvolvimento de Software,
@@ -51,10 +56,10 @@
           enfrentar desafios, ansioso para aplicar e aprimorar minhas habilidades de programação no ambiente de trabalho
           diário. </p>
       </div>
-      <div class="container-icons">
+      <div class="container-icons" data-aos="flip-up" data-aos-duration="1000">
 
-        <div class="icons">
-          <img src="./assets/icons/smile.png" alt="icone de perfil">
+        <div class="icons" ">
+          <img src=" ./assets/icons/smile.png" alt="icone de perfil">
           <h2>Meu nome</h2>
           <p>
             Davi Simão
@@ -134,7 +139,7 @@
       <div class="title-my-skills">
         <h3>Minhas skills</h3>
       </div>
-      <div class="container-skill">
+      <div class="container-skill" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
         <div class="skill">
           <img src="assets/skills/icomoon-free_html-five.png" alt="skil HTML">
         </div>
@@ -158,6 +163,12 @@
       </div>
     </section>
   </main>
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
