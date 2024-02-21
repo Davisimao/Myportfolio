@@ -14,7 +14,6 @@ header {
   display: flex;
   gap: 2rem;
 }
-
 .nav-itens a {
   text-decoration: none;
   color: #E0E0E0;
@@ -29,7 +28,6 @@ a {
   justify-content: space-evenly;
   margin: 6rem 0;
 }
-
 .first-apresent h1 {
   font-weight: 700;
   font-size: 2rem;
@@ -43,18 +41,15 @@ a {
   gap: 1rem;
   height: auto;
 }
-
 .prev-apresent p {
   color: #828282;
 }
-
 .prev-apresent a {
   padding: 1rem;
   border-radius: 0.3rem;
   background-color: transparent;
   color: #E0E0E0;
 }
-
 .prev-apresent .contact {
   padding: 1rem;
   border-radius: 0.3rem;
@@ -67,7 +62,6 @@ a {
   display: flex;
   gap: 1rem;
 }
-
 .buttons-apresent .download {
   border: none;
   color: #333333;
@@ -82,7 +76,6 @@ a {
   justify-content: center;
   gap: 2rem;
 }
-
 .about-me .about {
   width: 745px;
   height: 160px;
@@ -112,11 +105,9 @@ h3 {
   justify-content: center;
   margin-bottom: 10rem;
 }
-
 .container-icons img {
   width: 2.7rem;
 }
-
 .container-icons .icons {
   display: flex;
   flex-direction: column;
@@ -124,19 +115,16 @@ h3 {
   align-items: center;
   gap: 1rem;
 }
-
 .container-icons .icons h2 {
   color: #E0E0E0;
   font-weight: 700;
   letter-spacing: 0em;
   text-align: left;
 }
-
 .container-icons .icons p {
   color: #828282;
   font-weight: 400;
 }
-
 .container-icons .icons a {
   color: #828282;
 }
@@ -147,7 +135,6 @@ h3 {
   flex-direction: column;
   align-items: center;
 }
-
 .title-about-me h3 {
   margin-bottom: 4rem;
   font-size: 28px;
@@ -159,6 +146,7 @@ h3 {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 4rem;
+  flex-wrap: wrap;
 }
 
 .container-project {
@@ -166,7 +154,6 @@ h3 {
   justify-content: space-around;
   align-items: center;
   margin-bottom: 3rem;
-  flex-wrap: wrap;
 }
 
 .card {
@@ -184,12 +171,6 @@ h3 {
   flex-direction: column;
   padding: 1.5rem;
 }
-
-.card a {
-  background-color: red;
-  height: 100%;
-}
-
 .card h5 {
   background-color: #333333;
   font-size: 18px;
@@ -198,7 +179,6 @@ h3 {
   text-align: left;
   color: #E0E0E0;
 }
-
 .card p {
   background-color: #333333;
   font-size: 14px;
@@ -206,6 +186,54 @@ h3 {
   line-height: 18px;
   text-align: left;
   color: #828282;
+}
+.card img {
+  width: 100%;
+  height: 154px;
+  border-radius: 1rem;
+}
+.card a {
+  border: none;
+}
+
+.my-skills {
+  margin-top: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.title-my-skills {
+  background-color: #333333;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+  color: #E0E0E0;
+}
+
+.container-skill {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  justify-content: center;
+  margin-bottom: 10rem;
+}
+.container-skill .skill {
+  display: flex;
+  width: 150px;
+  height: 150px;
+  align-items: center;
+  justify-content: center;
+  background: #212121;
+}
+.container-skill .skill img {
+  background: #212121;
+  width: 80px;
+  height: 80px;
+  padding: 0px 5px;
 }
 
 * {
@@ -215,7 +243,7 @@ h3 {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  background-color: #212121;
+  background-color: #171717;
 }
 
 button {

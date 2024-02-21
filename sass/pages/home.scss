@@ -169,6 +169,7 @@ h3 {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 4rem;
+  flex-wrap: wrap;
 }
 
 
@@ -178,7 +179,7 @@ h3 {
   justify-content: space-around;
   align-items: center;
   margin-bottom: 3rem;
-  flex-wrap: wrap;
+
 }
 
 
@@ -196,11 +197,6 @@ h3 {
   gap: 10px;
   flex-direction: column;
   padding: 1.5rem;
-
-  & a {
-    background-color: red;
-    height: 100%;
-  }
 
   & h5 {
     background-color: $dark-30;
@@ -221,4 +217,63 @@ h3 {
     text-align: left;
     color: $dark-40;
   }
+
+  & img {
+    width: 100%;
+    height: 154px;
+    border-radius: 1rem;
+  }
+
+  & a {
+    border: none;
+  }
+}
+
+.my-skills {
+  margin-top: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+
+}
+
+.title-my-skills {
+  background-color: $dark-30;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+  color: $support-05;
+}
+
+
+
+.container-skill {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  justify-content: center;
+  margin-bottom: 10rem;
+
+
+  & .skill {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    background: $dark-20;
+
+    & img {
+      background: $dark-20 ;
+      width: 80px;
+      height: 80px;
+      padding: 0px 5px;
+
+    }
+  }
+
+
 }
