@@ -181,6 +181,7 @@ h3 {
   font-size: 18px;
   font-weight: 500;
   line-height: 23px;
+  text-decoration: underline;
   text-align: left;
   color: #E0E0E0;
 }
@@ -259,6 +260,25 @@ h3 {
   color: #00DF5E;
   background-color: #333333;
   font-weight: 500;
+}
+
+.contact:hover {
+  transition: 1.5s;
+  background-color: #E0E0E0;
+  border: 1px solid #333333;
+}
+.contact:hover a {
+  color: #171717;
+  transition: 1.5s;
+}
+
+.download a:hover {
+  border: 100px solid #E0E0E0;
+}
+
+.download:hover {
+  color: #E0E0E0;
+  transition: 1s;
 }
 
 * {

@@ -66,6 +66,8 @@ a {
     color: $support-05;
   }
 
+
+
   & .contact {
     padding: 1rem;
     border-radius: .3rem;
@@ -86,6 +88,9 @@ a {
     color: $dark-30;
     background-color: $brand-color;
   }
+
+
+
 }
 
 .about-me {
@@ -210,7 +215,7 @@ h3 {
     font-size: 18px;
     font-weight: 500;
     line-height: 23px;
-
+    text-decoration: underline;
     text-align: left;
     color: $support-05;
 
@@ -309,4 +314,26 @@ h3 {
     background-color: $dark-30;
     font-weight: 500;
   }
+}
+
+.contact:hover {
+  transition: 1.5s;
+  background-color: $support-05;
+  border: 1px solid $dark-30 ;
+
+  & a {
+    color: $dark-10;
+    transition: 1.5s;
+  }
+
+}
+
+
+.download a:hover {
+  border: 100px solid $support-05;
+}
+
+.download:hover {
+  color: $support-05;
+  transition: 1s;
 }
