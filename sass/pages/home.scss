@@ -401,3 +401,12 @@ h3 {
     }
   }
 }
+
+@media (max-width: 426px) {
+  .header {
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    gap: 1rem;
+  }
+}
