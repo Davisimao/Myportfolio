@@ -388,11 +388,16 @@ h3 {
 
 @media (max-width: 768px) {
   .container-icons {
-    padding: 10px;
+    padding: 13px;
   }
 
   .about-me {
-    flex-wrap: wrap;
-  }
+    & .about {
+      width: 400px;
+      height: 140px;
 
+      font-size: 16px;
+
+    }
+  }
 }
