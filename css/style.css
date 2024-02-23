@@ -164,7 +164,6 @@ h3 {
 }
 
 .card {
-  padding: 1rem;
   background-color: #333333;
   width: 350px;
   height: 200px;
@@ -331,6 +330,31 @@ h3 {
     justify-self: center;
     align-items: center;
     gap: 1rem;
+  }
+  .about-me .about {
+    width: 320px;
+    height: 140px;
+    font-size: 14px;
+  }
+  .card {
+    padding: 10px;
+    width: 312px;
+    height: 174px;
+    top: 874px;
+    left: 23px;
+  }
+  .card img {
+    height: 110px;
+    top: 890.5px;
+    left: 42px;
+    border: 0.72px;
+  }
+  .first-apresent {
+    justify-content: center;
+    align-items: center;
+  }
+  .prev-apresent {
+    width: 270px;
   }
 }
 * {
