@@ -178,70 +178,103 @@ h3 {
   }
 }
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 4rem;
-  flex-wrap: wrap;
-}
 
-
-
-.container-project {
+.title-project {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 3rem;
-
-}
-
-
-.card {
-  background-color: $dark-30;
-  width: 350px;
-  height: 200px;
-  border: 1px solid $dark-40;
-}
-
-.card {
-  display: flex;
-  justify-content: end;
-  gap: 10px;
+  justify-content: center;
   flex-direction: column;
-  padding: 1.5rem;
+  align-items: center;
 
-  & h4 {
-
-    background-color: $dark-30;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 23px;
-    text-decoration: underline;
-    text-align: left;
-    color: $support-05;
-
-  }
-
-  & p {
-    background-color: $dark-30;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
-    text-align: left;
-    color: $dark-40;
-  }
-
-  & img {
-    width: 100%;
-    height: 154px;
-    border-radius: 1rem;
-  }
-
-  & a {
-    border: none;
+  & h3 {
+    margin-bottom: 4rem;
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
   }
 }
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1.75rem;
+}
+
+.card {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+}
+
+
+
+.description {
+  margin-top: 20px;
+}
+
+.description h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #d1d1d1;
+}
+
+.description p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #666;
+}
+
+.buttons {
+  margin-top: 20px;
+
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #4e4e4e;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #3b3b3b;
+  }
+
+  &.disable:hover {
+    cursor: not-allowed;
+    background-color: #4e4e4e;
+  }
+
+  &.see-more {
+    background-color: #3b6b3f;
+
+    &:hover {
+      background-color: #2e542e;
+    }
+  }
+}
+
+
+
+
+.more-projects {
+  margin-top: 2.75rem;
+  text-align: center;
+
+}
+
 
 .my-skills {
   margin-top: 7rem;
