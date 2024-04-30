@@ -164,9 +164,9 @@ h3 {
 .projects {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 1.75rem;
+  gap: 2.75rem;
 }
 
 .card {
