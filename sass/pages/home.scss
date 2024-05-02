@@ -90,9 +90,18 @@ a {
     color: $dark-30;
     background-color: $brand-color;
   }
+}
 
+.first-apresent-contacts {
+  display: flex;
+  align-items: center;
 
+  img {
+    margin-top: .50rem;
+    position: relative;
+    right: 15px;
 
+  }
 }
 
 .about-me {

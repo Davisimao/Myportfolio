@@ -75,6 +75,16 @@ a {
   background-color: #00DF5E;
 }
 
+.first-apresent-contacts {
+  display: flex;
+  align-items: center;
+}
+.first-apresent-contacts img {
+  margin-top: 0.5rem;
+  position: relative;
+  right: 15px;
+}
+
 .about-me {
   margin-top: 5rem;
   display: flex;
