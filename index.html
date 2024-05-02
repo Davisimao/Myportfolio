@@ -30,6 +30,7 @@
         <a href="#aboutme">Sobre mim</a>
         <a href="#projects">Projetos</a>
         <a href="#skills">Minhas Skills</a>
+        <a href="#contact">Contato</a>
 
       </nav>
 
@@ -196,6 +197,26 @@
 
 
       </div>
+    </section>
+    <section class="contact-footer" id="contact">
+      <div class="title-contact">
+        <h3>Contato</h3>
+      </div>
+      <p>Para entrar em contato comigo, por favor, preencha o formulário abaixo.</p>
+      <div class="container-contact">
+        <form action="https://api.staticforms.xyz/submit" method="post" style="display: flex; flex-direction: column;">
+          <input type="text" name="name" placeholder="Seu nome">
+          <input type="text" name="email" placeholder="Seu email" />
+          <textarea name="message" cols="101" rows="10" placeholder="Sua mensagem aqui"></textarea>
+          <input type="text" name="honeypot" style="display:none">
+          <input type="hidden" name="accessKey" value="049f18cd-280a-4e25-a43b-61d2e1a772b2">
+          <input type="hidden" name="subject" value="Contact us from - example.com" />
+          <input type="hidden" name="replyTo" value="@">
+          <input type="hidden" name="redirectTo" value="https://example.com/contact/success">
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+
     </section>
   </main>
 

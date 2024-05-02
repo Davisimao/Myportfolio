@@ -67,12 +67,23 @@ a {
 
 .buttons-apresent {
   display: flex;
+  align-items: center;
   gap: 1rem;
+  /* caguei */
 }
 .buttons-apresent .download {
   border: none;
   color: #333333;
   background-color: #00DF5E;
+  height: 30px;
+  width: 100px;
+}
+.buttons-apresent .download a:hover {
+  border: 100px solid #E0E0E0;
+}
+.buttons-apresent .download:hover {
+  color: #E0E0E0;
+  transition: 1s;
 }
 
 .first-apresent-contacts {
@@ -229,6 +240,10 @@ h3 {
 .buttons {
   margin-top: 20px;
 }
+.buttons img {
+  width: 20px;
+  background-color: transparent;
+}
 
 .btn {
   display: inline-block;
@@ -329,13 +344,63 @@ h3 {
   transition: 1.5s;
 }
 
-.download a:hover {
-  border: 100px solid #E0E0E0;
+.contact-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  gap: 2.5rem;
+}
+.contact-footer p {
+  color: white;
+}
+.contact-footer h3 {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #E0E0E0;
+}
+.contact-footer:hover {
+  background-color: transparent;
+  border: none;
 }
 
-.download:hover {
-  color: #E0E0E0;
-  transition: 1s;
+.container-contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.container-contact form textarea {
+  font-size: 1rem;
+  color: white;
+  border-radius: 7px;
+  padding: 1rem;
+}
+.container-contact form input {
+  padding: 1rem;
+  height: auto;
+  width: 430px;
+  border: 1px solid #828282;
+  color: white;
+  border-radius: 7px;
+}
+.container-contact form input:nth-child(-n+2) {
+  width: 850px;
+  font-size: 1rem;
+}
+.container-contact form input[type=submit]:hover {
+  cursor: pointer;
+  border: solid 1px #00DF5E;
+  transition: transform 250ms cubic-bezier(0.2, 0.8, 0.4, 1);
+}
+.container-contact form input[type=submit]:hover:hover {
+  transform: scale(1.1);
+}
+.container-contact form input[type=submit]:hover:active {
+  transform: scale(0.9);
 }
 
 @media (max-width: 1450px) {
@@ -360,9 +425,6 @@ h3 {
   }
 }
 @media (max-width: 880px) {
-  .cards {
-    grid-template-columns: repeat(1, 1fr);
-  }
   .container-skill {
     flex-wrap: wrap;
   }
