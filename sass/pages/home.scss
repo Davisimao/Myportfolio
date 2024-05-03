@@ -471,27 +471,21 @@ h3 {
       border-radius: 7px;
       padding: 1rem;
       font-size: 1rem;
+      width: 550px;
+      height: 200px;
     }
 
     input {
       font-size: 1rem;
       padding: 1rem;
       height: auto;
-      width: 430px;
+      width: 550px;
       border: 1px solid $dark-40;
       color: white;
       border-radius: 7px;
     }
 
-
-    input:nth-child(-n+2) {
-      width: 850px;
-
-    }
-
     input[type="submit"] {
-
-
       &:hover {
         cursor: pointer;
         border: solid 1px $brand-color;
