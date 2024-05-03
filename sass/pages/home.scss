@@ -37,7 +37,8 @@ a {
 .first-apresent {
   display: flex;
   justify-content: space-evenly;
-  margin: 6rem 0;
+  margin: none 0;
+  margin-top: 7rem;
 
   & h1 {
     font-weight: 700;
@@ -111,7 +112,7 @@ a {
 }
 
 .about-me {
-  margin-top: 5rem;
+  margin-top: 7rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -142,12 +143,12 @@ h3 {
 
 
 .container-icons {
-  margin-top: 10rem;
+  margin-top: 7rem;
   display: flex;
   flex-direction: row;
   gap: 10rem;
   justify-content: center;
-  margin-bottom: 10rem;
+  margin-bottom: 7rem;
 
   & img {
     width: 2.7rem;
@@ -342,7 +343,6 @@ h3 {
   flex-direction: row;
   gap: 3rem;
   justify-content: center;
-  margin-bottom: 10rem;
 
 
   & .skill {
@@ -366,6 +366,7 @@ h3 {
 }
 
 .footer {
+  margin-top: 7rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -407,7 +408,7 @@ h3 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 2.5rem;
+  margin-top: 7rem;
   margin-bottom: 2.5rem;
   gap: 2.5rem;
 
