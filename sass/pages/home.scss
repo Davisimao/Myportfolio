@@ -64,49 +64,77 @@ a {
     border-radius: .3rem;
     background-color: transparent;
     color: $support-05;
+
   }
 
   & .contact {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
     padding: 1rem;
     border-radius: .3rem;
     background-color: transparent;
     color: $support-05;
     border: 1px solid $dark-40;
+    height: 22px;
+    width: 135px;
+
+
+
+    &:hover {
+      background-color: white;
+      color: black;
+      transition: 1.5s;
+    }
   }
+
+
 }
 
 .buttons-apresent {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   gap: 1rem;
 
-  /* caguei */
+
   & .download {
-    border: none;
+    display: flex;
+    justify-content: center;
     color: $dark-30;
     background-color: $brand-color;
-    height: 30px;
+    height: 22px;
     width: 100px;
-  }
+    height: 22px;
+    width: 135px;
 
-  .download a:hover {
-    border: 100px solid $support-05;
-  }
+    &:hover {
+      color: white;
+      transition: 1.5s;
 
-  .download:hover {
-    color: $support-05;
-    transition: 1s;
+    }
   }
 }
+
+
+
 
 .first-apresent-contacts {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+
+  & .icons-contact {
+    padding: 0;
+    margin: 0;
+  }
 
   img {
-    margin-top: .50rem;
+
     position: relative;
-    right: 15px;
+
 
   }
 }
@@ -404,17 +432,7 @@ h3 {
   }
 }
 
-.contact:hover {
-  transition: 1.5s;
-  background-color: $support-05;
-  border: 1px solid $dark-30 ;
 
-  & a {
-    color: $dark-10;
-    transition: 1.5s;
-  }
-
-}
 
 
 

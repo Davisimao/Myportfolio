@@ -59,42 +59,57 @@ a {
   color: #E0E0E0;
 }
 .prev-apresent .contact {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  text-align: center;
   padding: 1rem;
   border-radius: 0.3rem;
   background-color: transparent;
   color: #E0E0E0;
   border: 1px solid #828282;
+  height: 22px;
+  width: 135px;
+}
+.prev-apresent .contact:hover {
+  background-color: white;
+  color: black;
+  transition: 1.5s;
 }
 
 .buttons-apresent {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   gap: 1rem;
-  /* caguei */
 }
 .buttons-apresent .download {
-  border: none;
+  display: flex;
+  justify-content: center;
   color: #333333;
   background-color: #00DF5E;
-  height: 30px;
+  height: 22px;
   width: 100px;
-}
-.buttons-apresent .download a:hover {
-  border: 100px solid #E0E0E0;
+  height: 22px;
+  width: 135px;
 }
 .buttons-apresent .download:hover {
-  color: #E0E0E0;
-  transition: 1s;
+  color: white;
+  transition: 1.5s;
 }
 
 .first-apresent-contacts {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.first-apresent-contacts .icons-contact {
+  padding: 0;
+  margin: 0;
 }
 .first-apresent-contacts img {
-  margin-top: 0.5rem;
   position: relative;
-  right: 15px;
 }
 
 .about-me {
@@ -346,16 +361,6 @@ h3 {
   color: #00DF5E;
   background-color: #333333;
   font-weight: 500;
-}
-
-.contact:hover {
-  transition: 1.5s;
-  background-color: #E0E0E0;
-  border: 1px solid #333333;
-}
-.contact:hover a {
-  color: #171717;
-  transition: 1.5s;
 }
 
 .contact-footer {
