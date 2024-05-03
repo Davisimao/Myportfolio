@@ -1,6 +1,5 @@
 .header {
   color: white;
-  width: auto;
   height: 5rem;
   padding: 2rem 4rem;
   display: flex;
@@ -369,6 +368,7 @@ h3 {
   transition: 0.6s;
   flex-wrap: wrap;
 
+
   & .skill {
     display: flex;
     flex-direction: column;
@@ -378,6 +378,7 @@ h3 {
     align-items: center;
     justify-content: center;
     background: $dark-20;
+    /* border: 1px solid $dark-30; */
 
     p {
       color: white;
@@ -471,7 +472,8 @@ h3 {
       border-radius: 7px;
       padding: 1rem;
       font-size: 1rem;
-      width: 550px;
+      width: 100%;
+      max-width: 550px;
       height: 200px;
     }
 
@@ -479,7 +481,8 @@ h3 {
       font-size: 1rem;
       padding: 1rem;
       height: auto;
-      width: 550px;
+      width: 100%;
+      max-width: 550px;
       border: 1px solid $dark-40;
       color: white;
       border-radius: 7px;
@@ -567,6 +570,8 @@ h3 {
 
 @media (max-width: 426px) {
   .header {
+    padding: 0;
+    padding-top: 2rem;
     display: flex;
     gap: 1.25rem;
 
