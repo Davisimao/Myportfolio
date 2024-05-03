@@ -437,13 +437,14 @@ h3 {
 
 
     textarea {
-      font-size: 1rem;
       color: white;
       border-radius: 7px;
       padding: 1rem;
+      font-size: 1rem;
     }
 
     input {
+      font-size: 1rem;
       padding: 1rem;
       height: auto;
       width: 430px;
@@ -455,7 +456,7 @@ h3 {
 
     input:nth-child(-n+2) {
       width: 850px;
-      font-size: 1rem;
+
     }
 
     input[type="submit"] {
@@ -464,7 +465,6 @@ h3 {
       &:hover {
         cursor: pointer;
         border: solid 1px $brand-color;
-
         transition: transform 250ms cubic-bezier(.2, .8, .4, 1);
 
         &:hover {

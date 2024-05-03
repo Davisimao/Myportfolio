@@ -374,12 +374,13 @@ h3 {
   gap: 1rem;
 }
 .container-contact form textarea {
-  font-size: 1rem;
   color: white;
   border-radius: 7px;
   padding: 1rem;
+  font-size: 1rem;
 }
 .container-contact form input {
+  font-size: 1rem;
   padding: 1rem;
   height: auto;
   width: 430px;
@@ -389,7 +390,6 @@ h3 {
 }
 .container-contact form input:nth-child(-n+2) {
   width: 850px;
-  font-size: 1rem;
 }
 .container-contact form input[type=submit]:hover {
   cursor: pointer;
