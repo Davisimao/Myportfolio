@@ -445,28 +445,20 @@ h3 {
 }
 @media (max-width: 426px) {
   .header {
-    flex-direction: column;
-    justify-self: center;
-    align-items: center;
-    gap: 1rem;
+    display: flex;
+    gap: 1.25rem;
+  }
+  .header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   .about-me .about {
     width: 320px;
     height: 140px;
     font-size: 14px;
-  }
-  .card {
-    padding: 10px;
-    width: 312px;
-    height: 174px;
-    top: 874px;
-    left: 23px;
-  }
-  .card img {
-    height: 110px;
-    top: 890.5px;
-    left: 42px;
-    border: 0.72px;
+    margin-bottom: 7rem;
   }
   .first-apresent {
     justify-content: center;
@@ -481,6 +473,25 @@ h3 {
     padding-left: 0;
   }
 }
+.contact-footer p {
+  width: auto;
+  margin: 0 6px;
+  text-align: center;
+}
+.contact-footer .container-contact form {
+  gap: 1.75rem;
+}
+.contact-footer .container-contact form textarea {
+  width: 280px;
+  height: 170px;
+}
+.contact-footer .container-contact form input {
+  width: 330px;
+}
+.contact-footer .container-contact form input:nth-child(-n+2) {
+  width: 320px;
+}
+
 * {
   margin: 0;
   padding: 0;
