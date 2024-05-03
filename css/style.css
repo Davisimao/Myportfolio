@@ -472,26 +472,25 @@ h3 {
     text-align: center;
     padding-left: 0;
   }
+  .contact-footer p {
+    width: auto;
+    margin: 0 6px;
+    text-align: center;
+  }
+  .contact-footer .container-contact form {
+    gap: 1.75rem;
+  }
+  .contact-footer .container-contact form textarea {
+    width: 280px;
+    height: 170px;
+  }
+  .contact-footer .container-contact form input {
+    width: 330px;
+  }
+  .contact-footer .container-contact form input:nth-child(-n+2) {
+    width: 320px;
+  }
 }
-.contact-footer p {
-  width: auto;
-  margin: 0 6px;
-  text-align: center;
-}
-.contact-footer .container-contact form {
-  gap: 1.75rem;
-}
-.contact-footer .container-contact form textarea {
-  width: 280px;
-  height: 170px;
-}
-.contact-footer .container-contact form input {
-  width: 330px;
-}
-.contact-footer .container-contact form input:nth-child(-n+2) {
-  width: 320px;
-}
-
 * {
   margin: 0;
   padding: 0;
