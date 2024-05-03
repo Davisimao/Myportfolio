@@ -205,9 +205,9 @@
       <p>Para entrar em contato comigo, por favor, preencha o formulário abaixo.</p>
       <div class="container-contact">
         <form action="https://api.staticforms.xyz/submit" method="post" style="display: flex; flex-direction: column;">
-          <input type="text" name="name" placeholder="Seu nome">
-          <input type="text" name="email" placeholder="Seu email" />
-          <textarea name="message" cols="101" rows="10" placeholder="Sua mensagem aqui"></textarea>
+          <input type="text" name="name" placeholder="Seu nome" required>
+          <input type="text" name="email" placeholder="Seu email" required />
+          <textarea name="message" cols="101" rows="10" placeholder="Sua mensagem aqui" required></textarea>
           <input type="text" name="honeypot" style="display:none">
           <input type="hidden" name="accessKey" value="049f18cd-280a-4e25-a43b-61d2e1a772b2">
           <input type="hidden" name="subject" value="Contact us from - example.com" />
