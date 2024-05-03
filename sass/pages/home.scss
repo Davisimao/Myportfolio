@@ -1,15 +1,10 @@
-header {
-  color: $support-05;
-  min-width: 100%;
-}
-
 .header {
+  color: white;
   width: auto;
   height: 5rem;
-  padding-top: 2rem;
+  padding: 2rem 4rem;
   display: flex;
   justify-content: space-between;
-  margin: 0 5rem;
 }
 
 .nav-itens {
