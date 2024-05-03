@@ -483,6 +483,12 @@ h3 {
   .prev-apresent {
     width: 270px;
   }
+  .download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
   .contact a {
     width: 100%;
     text-align: center;
