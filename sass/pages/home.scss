@@ -171,6 +171,7 @@ h3 {
   gap: 10rem;
   justify-content: center;
   margin-bottom: 7rem;
+  flex-wrap: wrap;
 
   & img {
     width: 2.7rem;
@@ -410,6 +411,7 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100vw;
   height: 60px;
   background-color: $dark-30;
 
@@ -524,13 +526,9 @@ h3 {
 
 }
 
+
 @media (max-width: 1024px) {
 
-  .container-icons {
-
-    flex-wrap: wrap;
-
-  }
 
   .header {
     min-width: 100%;
@@ -553,9 +551,6 @@ h3 {
 }
 
 @media (max-width: 768px) {
-  .container-icons {
-    padding: 13px;
-  }
 
   .about-me {
     & .about {
@@ -653,5 +648,11 @@ h3 {
 
   .footer {
     margin-top: 3rem;
+
+    p {
+      margin: 0 10px;
+      font-size: 14px;
+      text-align: center;
+    }
   }
 }
