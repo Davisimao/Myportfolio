@@ -609,7 +609,7 @@ h3 {
       width: 320px;
       height: 140px;
       font-size: 14px;
-      margin-bottom: 7rem;
+      margin-bottom: 15rem;
 
     }
 
@@ -639,6 +639,9 @@ h3 {
     padding-left: 0;
   }
 
+  .container-icons {
+    flex-direction: column;
+  }
 
 
   .contact-footer {

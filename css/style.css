@@ -489,7 +489,7 @@ h3 {
     width: 320px;
     height: 140px;
     font-size: 14px;
-    margin-bottom: 7rem;
+    margin-bottom: 15rem;
   }
   .first-apresent {
     justify-content: center;
@@ -508,6 +508,9 @@ h3 {
     width: 100%;
     text-align: center;
     padding-left: 0;
+  }
+  .container-icons {
+    flex-direction: column;
   }
   .contact-footer p {
     width: auto;
