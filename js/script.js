@@ -1,20 +1,30 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const titulo = "Olá, eu sou o Davi Simão :)";
-  const tituloElemento = document.getElementById("Titulo");
+const texto = "Olá eu sou o Davi Simão =)"
 
-  let i = 0;
+const titulo = document.getElementById("Titulo")
+let i = 0
+let repeticao = 3
+let repeticaoatual = 0
 
 
-  function digitarTitulo() {
-
-    if (i < titulo.length) {
-      tituloElemento.innerHTML += titulo.charAt(i);
-      i++;
-      setTimeout(digitarTitulo, 100);
+function Write() {
+  if (repeticaoatual < repeticao) {
+    if (i < texto.length) {
+      titulo.innerHTML += texto.charAt(i)
+      i++
+      setTimeout(Write, 106)
+    } else {
+      titulo.innerHTML = ""
+      i = 0
+      repeticaoatual++
+      console.log(repeticaoatual)
+      setTimeout(Write, 1)
+      if (repeticaoatual === repeticao) {
+        titulo.innerHTML = texto
+      }
     }
   }
 
-  digitarTitulo();
-});
+}
 
-// fazer um script que essa função se repite 3
+
+Write()
