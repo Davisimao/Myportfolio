@@ -606,11 +606,12 @@ h3 {
   .about-me {
 
     & .about {
+      margin-top: 2rem;
       width: 320px;
       height: 140px;
-      font-size: 14px;
+      font-size: 15px;
       margin-bottom: 15rem;
-
+      text-align: start;
     }
 
   }
