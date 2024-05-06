@@ -42,15 +42,18 @@ a {
 
   .image-apresent {
     img {
-      border-radius: 200px 200px 200px 200px;
-      -webkit-border-radius: 200px 200px 200px 200px;
-      -moz-border-radius: 200px 200px 200px 200px;
-      border: 6px solid $dark-40;
+      border-radius: 999px;
+      border: 4px solid $brand-color;
+
     }
+
+
 
   }
 
 }
+
+
 
 .prev-apresent {
   font-weight: 600;
