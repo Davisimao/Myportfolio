@@ -27,12 +27,19 @@ a {
 .first-apresent {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   margin: none 0;
   margin-top: 7rem;
 }
 .first-apresent h1 {
   font-weight: 700;
   font-size: 2rem;
+}
+.first-apresent .image-apresent img {
+  border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 200px 200px 200px 200px;
+  -moz-border-radius: 200px 200px 200px 200px;
+  border: 6px solid #828282;
 }
 
 .prev-apresent {

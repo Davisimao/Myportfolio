@@ -31,12 +31,23 @@ a {
 .first-apresent {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   margin: none 0;
   margin-top: 7rem;
 
   & h1 {
     font-weight: 700;
     font-size: 2rem;
+  }
+
+  .image-apresent {
+    img {
+      border-radius: 200px 200px 200px 200px;
+      -webkit-border-radius: 200px 200px 200px 200px;
+      -moz-border-radius: 200px 200px 200px 200px;
+      border: 6px solid $dark-40;
+    }
+
   }
 
 }

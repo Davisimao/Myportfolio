@@ -16,7 +16,6 @@ function Write() {
       titulo.innerHTML = ""
       i = 0
       repeticaoatual++
-      console.log(repeticaoatual)
       setTimeout(Write, 1)
       if (repeticaoatual === repeticao) {
         titulo.innerHTML = texto
