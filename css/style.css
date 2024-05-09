@@ -105,6 +105,10 @@ a {
   height: 22px;
   width: 135px;
 }
+.buttons-apresent .download img {
+  background-color: transparent;
+  margin-right: 4px;
+}
 .buttons-apresent .download:hover {
   color: white;
   transition: 1.5s;

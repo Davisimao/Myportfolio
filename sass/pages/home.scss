@@ -120,6 +120,7 @@ a {
   & .download {
     display: flex;
     justify-content: center;
+
     color: $dark-30;
     background-color: $brand-color;
     height: 22px;
@@ -127,9 +128,15 @@ a {
     height: 22px;
     width: 135px;
 
+    img {
+      background-color: transparent;
+      margin-right: 4px;
+    }
+
     &:hover {
       color: white;
       transition: 1.5s;
+
 
     }
   }
@@ -631,6 +638,9 @@ h3 {
     align-items: center;
     justify-content: center;
     text-align: center;
+
+
+
 
   }
 
