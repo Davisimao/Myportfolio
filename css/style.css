@@ -240,9 +240,11 @@ h3 {
   justify-content: center;
   flex-wrap: wrap;
   gap: 2.75rem;
+  transition: 0.6s;
 }
 .projects:hover > :not(:hover) {
   opacity: 0.4;
+  transition: 0.6s;
 }
 
 .card {
