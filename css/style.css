@@ -367,12 +367,34 @@ h3 {
   cursor: pointer;
 }
 
+.button-fixed {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10px;
+  height: 25px;
+}
+.button-fixed img, .button-fixed a {
+  background-color: transparent;
+}
+
 .footer {
   margin-top: 7rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   height: 60px;
   background-color: #333333;
 }
@@ -471,6 +493,9 @@ h3 {
   }
 }
 @media (max-width: 768px) {
+  /*  .button-fixed{
+     visibility: hidden;
+   } */
   .about-me .about {
     width: 400px;
     height: 140px;
