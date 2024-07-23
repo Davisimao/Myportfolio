@@ -239,12 +239,13 @@ h3 {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2.75rem;
+  gap: 1.75rem;
   transition: 0.6s;
+  max-width: 100%;
 }
 .projects:hover > :not(:hover) {
   opacity: 0.4;
-  transition: 0.6s;
+  transition: 0.7s;
 }
 
 .card {
