@@ -1,5 +1,5 @@
-import { Provider } from "@/store/components/ui/provider";
 import "./globals.css";
+import { Provider } from "./provider";
 
 export const metadata = {
   title: "Davi Simão",
@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="pt-br" className="bg-slate-200 text-black" suppressHydrationWarning>
+    <html lang="pt-br" suppressHydrationWarning>
       <body>
         <Provider>{children}</Provider>
       </body>
