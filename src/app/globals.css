@@ -8,3 +8,8 @@ html{
     background-color: #f9f9f9;
     color: #333;
 }
+
+.chakra-timeline__separator {
+    width: 1.5px;
+    background-color: #000000;
+}

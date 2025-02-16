@@ -3,7 +3,7 @@ import { Container, Flex } from "@chakra-ui/react";
 export default function header() {
   return (
     <header>
-      <Container className="mt-8 rounded-lg px-10 py-5">
+      <Container className="mt-8 rounded-lg px-10">
         <Flex className="justify-between">
           <h1>@davisimao</h1>
           <Flex className="gap-10">
