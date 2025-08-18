@@ -17,12 +17,11 @@ const translations = {
     aboutText2:
       "as the main developer responsible for the company's systems.",
     aboutText3:
-      "After the sale of the main platform, I took over the management and evolution of the company's legacy systems, becoming the focal point for all system-related demands and ensuring scalable, high-performance, and maintainable solutions.",
+      "After the sale of the company’s main platform, I took over the management and evolution of the company's legacy systems, becoming the focal point for all system-related demands and ensuring scalable, high-performance, and maintainable solutions.",
     aboutText4:
       "Currently, I maintain a daily goal of solving practical challenges and studying new topics, in addition to developing personal projects to experiment and expand my knowledge.",
     resumeLink: "Check out my resume",
     workExperience: "Professional Experience",
-    current: "Current",
     writing: "Writing",
     writingTitle: "Medium: Journey to the Portfolio →",
     writingDesc:"Some guidelines for effectively showcasing your work, especially as a front-end developer.",
@@ -38,12 +37,11 @@ const translations = {
     aboutText2:
       "como o principal desenvolvedor responsável pelos sistemas da empresa.",
     aboutText3:
-      "Após a venda da plataforma principal, assumi a gestão e evolução dos sistemas legados da empresa, tornando-me o ponto focal para todas as demandas relacionadas a sistemas e garantindo soluções escaláveis, performáticas e de fácil manutenção.",
+      "Após a venda do principal sistema da empresa, assumi a gestão e evolução dos sistemas legados da empresa, tornando-me o ponto focal para todas as demandas relacionadas a sistemas e garantindo soluções escaláveis, performáticas e de fácil manutenção.",
     aboutText4:
       "Atualmente, mantenho uma meta diária de resolver desafios práticos e estudar novos temas, além de desenvolver projetos pessoais para experimentar e expandir meu conhecimento.",
     resumeLink: "Confira meu currículo",
     workExperience: "Experiência Profissional",
-    current: "Atual",
     writing: "Escrita",
     writingTitle: "Medium: Jornada para o Portfólio →",
     writingDesc:
@@ -53,11 +51,28 @@ const translations = {
 
 const experiences : Experience[] = [
   {
-    title: "Teste",
-    companyName: "Jivemaua",
-    description: "descrição",
-    stacks: ["react", "TypeScript", "node.js"]
+    timeCompany: "2023 - Present",
+    current: "Atual",
+    title: "FullStack Engineer Junior",
+    companyName: "JiveMaua",
+    description: "Responsável pela arquitetura e manutenção do API-Hub, um repositório central de integrações desenvolvido em Python que interliga todos os sistemas da empresa (NetSuite, Bubble e automações internas).",
+    stacks: ["React", "TypeScript", "Node.js", "Python", "AWS"]
   },
+  {
+    timeCompany: "2023 - Present",
+    title: "FullStack Engineer Assistente",
+    companyName: "JiveMaua",
+    description: "Trabalhando no desenvolvimento e manutenção de um sistema interno de pagamentos que processou cerca de meio bilhão de reais, criado para facilitar e centralizar os pagamentos das empresas JiveMauá.",
+    stacks: ["React", "TypeScript", "ANT Design", "Node.js", "AWS"]
+  },
+  {
+    timeCompany: "Jun 2022 - Ago 2024",
+    title: "Analista de Suporte Tecnico",
+    companyName: "VIP Solutions",
+    description: "Analise e resolução de problemas utilizando logs do software Asterisk e de sistemas operacionais Linux. Supervisão e suporte de servidores utilizando a ferramenta de monitoramento Zabbix.",
+    stacks: ["SQL", "Linux", "Suporte Técnico"]
+  },
+
 ]
 
 export default function Portfolio() {
@@ -179,75 +194,29 @@ export default function Portfolio() {
 
           <div className="space-y-12">
             {/* Current Role */}
-            <div>
+
+            {experiences.map((exp : Experience,index : number) =>{
+              return(
+              <div key={index}>
               <div className="flex items-center gap-2 mb-2">
-                <span className={`text-sm ${isDark ? "text-zinc-500" : "text-zinc-500"}`}>2023 - Present</span>
+                <span className={`text-sm ${isDark ? "text-zinc-500" : "text-zinc-500"}`}>{exp.timeCompany}</span>
                 <Badge variant="secondary" className="bg-emerald-500/10 text-emerald-400 border-emerald-500/20">
-                  {t.current}
+                  {exp.current}
                 </Badge>
               </div>
               <h3 className={`font-medium text-lg mb-1 ${isDark ? "text-white" : "text-zinc-900"}`}>
-                Frontend Engineer (Full Stack) - <span className="text-emerald-400">JiveMaua</span>
+                {exp.title} - <span className="text-emerald-400">{exp.companyName}</span>
               </h3>
               <p className={`leading-relaxed mb-4 ${isDark ? "text-zinc-300" : "text-zinc-700"}`}>
-                Led the development of Clerk Metrics FC project, as part of the Clerk Metrics development team.
+                {exp.description}
               </p>
               <div className="flex flex-wrap gap-2">
-                <Badge variant="outline" className={`text-xs ${isDark ? "text-zinc-300" : "text-zinc-700"}`}>
-                  React
-                </Badge>
-                <Badge variant="outline" className={`text-xs ${isDark ? "text-zinc-300" : "text-zinc-700"}`}>
-                  TypeScript
-                </Badge>
-                <Badge variant="outline" className={`text-xs ${isDark ? "text-zinc-300" : "text-zinc-700"}`}>
-                  Next.js
-                </Badge>
+                {exp.stacks.map((stack, index)=>{
+                  return ( <Badge key={index} variant="outline" className={`text-xs ${isDark ? "text-zinc-300" : "text-zinc-700"}`}>{stack}</Badge>)
+                })}
               </div>
-            </div>
-
-            {/* Previous Role */}
-            <div>
-              <div className={`text-sm mb-2 ${isDark ? "text-zinc-500" : "text-zinc-500"}`}>Jan 2021 - Dec 2023</div>
-              <h3 className={`font-medium text-lg mb-1 ${isDark ? "text-white" : "text-zinc-900"}`}>
-                Frontend Engineer - <span className="text-emerald-400">JordMeal</span>
-              </h3>
-              <p className={`mb-3 ${isDark ? "text-zinc-400" : "text-zinc-600"}`}>Senior Frontend Engineer</p>
-              <p className={`leading-relaxed mb-4 ${isDark ? "text-zinc-300" : "text-zinc-700"}`}>
-                Worked on strategic projects at the Frontend Lead, serving to completely redefine the company's frontend
-                stack experience with a complete frontend stack rewrite and the implementation of a new design system.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <Badge variant="outline" className="text-xs">
-                  Vue.js
-                </Badge>
-                <Badge variant="outline" className="text-xs">
-                  Nuxt.js
-                </Badge>
-                <Badge variant="outline" className="text-xs">
-                  Design System
-                </Badge>
-              </div>
-            </div>
-
-            {/* Earlier Role */}
-            <div>
-              <div className={`text-sm mb-2 ${isDark ? "text-zinc-500" : "text-zinc-500"}`}>Jul 2019 - Nov 2021</div>
-              <h3 className={`font-medium text-lg mb-1 ${isDark ? "text-white" : "text-zinc-900"}`}>
-                Frontend Engineer (Internship) - <span className="text-emerald-400">Headland Partners</span>
-              </h3>
-              <p className={`leading-relaxed mb-4 ${isDark ? "text-zinc-300" : "text-zinc-700"}`}>
-                Migrated a monolithic Ruby application by implementing a modern architecture with Vue.js and more with
-                Spring Boot.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <Badge variant="outline" className="text-xs">
-                  Vue.js
-                </Badge>
-                <Badge variant="outline" className="text-xs">
-                  Spring Boot
-                </Badge>
-              </div>
-            </div>
+            </div>)
+            })}
           </div>
         </section>
 
