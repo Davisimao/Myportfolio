@@ -14,6 +14,9 @@ export const metadata: Metadata = {
   description:
     "Frontend Engineer crafting exceptional digital experiences through minimalist design and cutting-edge technology.",
   generator: "v0.app",
+  icons: {
+    icon: '/favicon.ico'
+  }
 }
 
 export default function RootLayout({
