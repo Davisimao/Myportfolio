@@ -2,9 +2,8 @@
 
 import { Badge } from "@/components/ui/badge"
 import { useState } from "react"
-import { Globe, Sun, Moon } from "lucide-react"
+import { Globe, Sun, Moon, ArrowUpRight } from "lucide-react"
 import { useTranslation } from "@/hooks/use-translation"
-
 
 export default function Portfolio() {
   const [isDark, setIsDark] = useState(true)
@@ -144,17 +143,45 @@ export default function Portfolio() {
                 <p className={`leading-relaxed mb-4 ${isDark ? "text-zinc-300" : "text-zinc-700"}`}>
                   {exp.description[language]}
                 </p>
-                <div className="flex flex-wrap gap-2">
-                  {exp.stacks.map((stack, stackIndex) => (
-                    <Badge
-                      key={stackIndex}
-                      variant="outline"
-                      className={`text-xs ${isDark ? "text-zinc-300" : "text-zinc-700"}`}
-                    >
-                      {stack}
-                    </Badge>
-                  ))}
-                </div>
+
+                {exp.projects && exp.projects.length > 0 && (
+                  <div className="mt-6">
+                    <h4 className={`text-sm font-medium mb-3 ${isDark ? "text-zinc-400" : "text-zinc-600"}`}>
+                      {t("projects")}
+                    </h4>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                      {exp.projects.map((project, projectIndex) => (
+                        <a
+                          key={projectIndex}
+                          href={project.url}
+                          className={`group flex items-center justify-between p-3 rounded-lg border transition-all duration-200 ${
+                            isDark
+                              ? "border-zinc-800 hover:border-emerald-500/50 hover:bg-zinc-900/50"
+                              : "border-zinc-200 hover:border-emerald-500/50 hover:bg-emerald-50/50"
+                          }`}
+                        >
+                          <span
+                            className={`text-sm font-medium ${
+                              isDark
+                                ? "text-zinc-200 group-hover:text-emerald-400"
+                                : "text-zinc-700 group-hover:text-emerald-600"
+                            }`}
+                          >
+                            {project.name[language]}
+                          </span>
+                          <ArrowUpRight
+                            size={16}
+                            className={`transition-all duration-200 ${
+                              isDark
+                                ? "text-zinc-500 group-hover:text-emerald-400"
+                                : "text-zinc-400 group-hover:text-emerald-600"
+                            } group-hover:translate-x-0.5 group-hover:-translate-y-0.5`}
+                          />
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
             ))}
           </div>

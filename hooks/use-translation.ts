@@ -9,13 +9,18 @@ export interface Translation {
   pt: string
 }
 
+export interface ProjectLink {
+  name: Translation
+  url: string
+}
+
 export interface ExperienceTranslation {
   timeCompany: Translation
   current?: Translation
   title: Translation
   companyName: string
   description: Translation
-  stacks: string[]
+  projects: ProjectLink[]
 }
 
 const translations = {
@@ -26,6 +31,7 @@ const translations = {
     en: "Building robust applications with innovation, performance, and purpose",
     pt: "Construindo aplicações sólidas com inovação, performance e propósito",
   },
+  projects: { en: "Projects", pt: "Projetos" },
   aboutMe: { en: "About Me", pt: "Sobre mim" },
   aboutText1: {
     en: "I am a FullStack Engineer with over 2 years of professional experience. I build clean, functional, and efficient interfaces, always focusing on clarity, consistency, and performance.",
@@ -83,7 +89,16 @@ const experiences: ExperienceTranslation[] = [
       en: "Responsible for the architecture and maintenance of API-Hub, a central integration repository developed in Python that interconnects all company systems (NetSuite, Bubble, and internal automations).",
       pt: "Responsável pela arquitetura e manutenção do API-Hub, um repositório central de integrações desenvolvido em Python que interliga todos os sistemas da empresa (NetSuite, Bubble e automações internas).",
     },
-    stacks: ["React", "TypeScript", "Node.js", "Python", "AWS"],
+    projects: [
+      {
+        name: { en: "API Hub – Centralized Integration Repository", pt: "API Hub – Repositório Central de Integrações" },
+        url: "/pages/projects/api-hub",
+      },
+      {
+        name: { en: "JiveMauaPay – Internal Payment System", pt: "JiveMauaPay – Sistema Interno de Pagamentos" },
+        url: "/pages/projects/jivemauapay",
+      },
+    ],
   },
   {
     timeCompany: { en: "Aug 2024 - Feb 2025", pt: "Ago 2024 - Fev 2025" },
@@ -93,7 +108,16 @@ const experiences: ExperienceTranslation[] = [
       en: "Working on the development and maintenance of an internal payment system that processed around half a billion reais, created to facilitate and centralize payments for JiveMauá companies.",
       pt: "Trabalhando no desenvolvimento e manutenção de um sistema interno de pagamentos que processou cerca de meio bilhão de reais, criado para facilitar e centralizar os pagamentos das empresas JiveMauá.",
     },
-    stacks: ["React", "TypeScript", "ANT Design", "Node.js", "AWS"],
+    projects: [
+      {
+        name: { en: "Supplier Management Module", pt: "Módulo de Gestão de Fornecedores" },
+        url: "/pages/projects/suppliers",
+      },
+      {
+        name: { en: "BackgroundCheck Automation", pt: "Automação de BackgroundCheck" },
+        url: "/pages/projects/backgroundcheck",
+      },
+    ],
   },
   {
     timeCompany: { en: "Jun 2022 - Aug 2024", pt: "Jun 2022 - Ago 2024" },
@@ -103,7 +127,12 @@ const experiences: ExperienceTranslation[] = [
       en: "Analysis and problem resolution using Asterisk software logs and Linux operating systems. Server supervision and support using the Zabbix monitoring tool.",
       pt: "Analise e resolução de problemas utilizando logs do software Asterisk e de sistemas operacionais Linux. Supervisão e suporte de servidores utilizando a ferramenta de monitoramento Zabbix.",
     },
-    stacks: ["SQL", "Linux", "Technical Support"],
+    projects: [
+      {
+        name: { en: "Video Conference Login Page", pt: "Página de Login para Videoconferência" },
+        url: "pages/projects/login-page",
+      },
+    ],
   },
 ]
 
