@@ -109,7 +109,7 @@ export default function Portfolio() {
 
             <p>
               <a
-                href="resume.pdf"
+                href="Davi_Simao_Desenvolvedor.pdf"
                 target="_blank"
                 className="text-emerald-400 hover:text-emerald-300 underline transition-colors"
                 rel="noreferrer"
