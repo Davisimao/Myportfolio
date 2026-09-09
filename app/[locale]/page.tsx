@@ -3,15 +3,30 @@
 import { Badge } from "@/components/ui/badge"
 import { useState } from "react"
 import { Globe, Sun, Moon, ArrowUpRight } from "lucide-react"
-import { useTranslation } from "@/hooks/use-translation"
+import { useTranslations, useLocale } from "next-intl"
+import { useRouter, usePathname } from "next/navigation"
 
 export default function Portfolio() {
   const [isDark, setIsDark] = useState(true)
-  const { language, t, toggleLanguage, experiences } = useTranslation()
+  const t = useTranslations("Index")
+  const locale = useLocale()
+  const router = useRouter()
+  const pathname = usePathname()
 
-  const toggleTheme = () => {
-    setIsDark(!isDark)
+  const toggleLanguage = () => {
+    const newLocale = locale === "en" ? "pt" : "en"
+    const newPath = pathname.replace(`/${locale}`, `/${newLocale}`)
+    router.push(newPath)
   }
+
+  const experienceList = t.raw("experiences") as Array<{
+    timeCompany: string
+    current?: string
+    title: string
+    companyName: string
+    description: string
+    projects: Array<{ name: string; url: string }>
+  }>
 
   return (
     <div
@@ -38,12 +53,12 @@ export default function Portfolio() {
                     ? "hover:bg-zinc-800 text-zinc-400 hover:text-zinc-200"
                     : "hover:bg-zinc-100 text-zinc-600 hover:text-zinc-900"
                 }`}
-                title={language === "en" ? "Português" : "English"}
+                title={locale === "en" ? "Português" : "English"}
               >
                 <Globe size={18} />
               </button>
               <button
-                onClick={toggleTheme}
+                onClick={() => setIsDark(!isDark)}
                 className={`p-2 rounded-lg transition-colors ${
                   isDark
                     ? "hover:bg-zinc-800 text-zinc-400 hover:text-zinc-200"
@@ -93,7 +108,7 @@ export default function Portfolio() {
               >
                 {t("companiesMessaging")}
               </a>{" "}
-              {language === "en" ? "and" : "e"}{" "}
+              {t("and")}{" "}
               <a
                 className={`font-medium ${isDark ? "text-white" : "text-zinc-900"} hover:text-emerald-500`}
                 target="_blank"
@@ -109,7 +124,7 @@ export default function Portfolio() {
 
             <p>
               <a
-                href="DaviSimao.pdf"
+                href="/DaviSimaoCV.pdf"
                 target="_blank"
                 className="text-emerald-400 hover:text-emerald-300 underline transition-colors"
                 rel="noreferrer"
@@ -125,23 +140,23 @@ export default function Portfolio() {
           <h2 className="text-emerald-400 text-lg font-medium mb-8">{t("workExperience")}</h2>
 
           <div className="space-y-12">
-            {experiences.map((exp, index) => (
+            {experienceList.map((exp, index) => (
               <div key={index}>
                 <div className="flex items-center gap-2 mb-2">
                   <span className={`text-sm ${isDark ? "text-zinc-500" : "text-zinc-500"}`}>
-                    {exp.timeCompany[language]}
+                    {exp.timeCompany}
                   </span>
                   {exp.current && (
                     <Badge variant="secondary" className="bg-emerald-500/10 text-emerald-400 border-emerald-500/20">
-                      {exp.current[language]}
+                      {exp.current}
                     </Badge>
                   )}
                 </div>
                 <h3 className={`font-medium text-lg mb-1 ${isDark ? "text-white" : "text-zinc-900"}`}>
-                  {exp.title[language]} - <span className="text-emerald-400">{exp.companyName}</span>
+                  {exp.title} - <span className="text-emerald-400">{exp.companyName}</span>
                 </h3>
                 <p className={`leading-relaxed mb-4 ${isDark ? "text-zinc-300" : "text-zinc-700"}`}>
-                  {exp.description[language]}
+                  {exp.description}
                 </p>
 
                 {exp.projects && exp.projects.length > 0 && (
@@ -153,7 +168,7 @@ export default function Portfolio() {
                       {exp.projects.map((project, projectIndex) => (
                         <a
                           key={projectIndex}
-                          href={project.url}
+                          href={`/${locale}${project.url}`}
                           className={`group flex items-center justify-between p-3 rounded-lg border transition-all duration-200 ${
                             isDark
                               ? "border-zinc-800 hover:border-emerald-500/50 hover:bg-zinc-900/50"
@@ -167,7 +182,7 @@ export default function Portfolio() {
                                 : "text-zinc-700 group-hover:text-emerald-600"
                             }`}
                           >
-                            {project.name[language]}
+                            {project.name}
                           </span>
                           <ArrowUpRight
                             size={16}

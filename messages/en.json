@@ -1,0 +1,141 @@
+{
+  "Index": {
+    "initialText": "Exploring new technologies",
+    "name": "Davi Sanches Simão",
+    "title": "FullStack Engineer",
+    "subtitle": "Building robust applications with innovation, performance, and purpose",
+    "aboutMe": "About Me",
+    "aboutText1": "I am a FullStack Engineer with over 2 years of professional experience. I build clean, functional, and efficient interfaces, always focusing on clarity, consistency, and performance.",
+    "currentlyWorkAt": "I currently work at",
+    "aboutText2": "as the main developer responsible for the company's systems.",
+    "aboutText3": "After the sale of the company's main platform, I took over the management and evolution of the company's legacy systems, becoming the focal point for all system-related demands and ensuring scalable, high-performance, and maintainable solutions.",
+    "aboutText4": "Currently, I maintain a daily goal of solving practical challenges and studying new topics, in addition to developing personal projects to experiment and expand my knowledge.",
+    "pastWork": "In the past, I've worked at",
+    "companiesMessaging": "companies focused on messaging (chatbots)",
+    "whitelabelSolutions": "whitelabel solutions",
+    "pastWorkDescription": ", which gave me a solid understanding of how to adapt systems to different constraints, always keeping the end user in mind.",
+    "resumeLink": "Check out my resume",
+    "workExperience": "Professional Experience",
+    "projects": "Projects",
+    "and": "and",
+    "experiences": [
+    {
+      "timeCompany": "Feb 2025 - Present",
+      "current": "Current",
+      "title": "Junior FullStack Engineer",
+      "companyName": "JiveMaua",
+      "description": "Responsible for the architecture and maintenance of API-Hub, a central integration repository developed in Python that interconnects all company systems (NetSuite, Bubble, and internal automations).",
+      "projects": [
+        {
+          "name": "API Hub – Centralized Integration Repository",
+          "url": "/pages/projects/api-hub"
+        },
+        {
+          "name": "JiveMauaPay – Internal Payment System",
+          "url": "/pages/projects/jivemauapay"
+        }
+      ]
+    },
+    {
+      "timeCompany": "Aug 2024 - Feb 2025",
+      "title": "Assistant FullStack Engineer",
+      "companyName": "JiveMaua",
+      "description": "Working on the development and maintenance of an internal payment system that processed around half a billion reais, created to facilitate and centralize payments for JiveMauá companies.",
+      "projects": [
+        {
+          "name": "Supplier Management Module",
+          "url": "/pages/projects/suppliers"
+        },
+        {
+          "name": "BackgroundCheck Automation",
+          "url": "/pages/projects/backgroundcheck"
+        }
+      ]
+    },
+    {
+      "timeCompany": "Jun 2022 - Aug 2024",
+      "title": "Technical Support Analyst",
+      "companyName": "VIP Solutions",
+      "description": "Analysis and problem resolution using Asterisk software logs and Linux operating systems. Server supervision and support using the Zabbix monitoring tool.",
+      "projects": [
+        {
+          "name": "Video Conference Login Page",
+          "url": "/pages/projects/login-page"
+        }
+      ]
+    }
+  ]
+  },
+  "ApiHub": {
+    "backToPortfolio": "Back to Portfolio",
+    "title": "API-Hub Integration System",
+    "subtitle": "Serverless central repository managing all company integrations",
+    "description": "The API-Hub is a serverless repository responsible for handling all integrations and data workflows within the company. Every integration and routine passes through this system, including all payment system interactions with Oracle NetSuite: Payment System → API-Hub → NetSuite. I am responsible for developing, maintaining, and, in new projects, choosing the appropriate architecture to implement.",
+    "technologiesTitle": "Technologies Used",
+    "featuresTitle": "Key Features",
+    "features": [
+      "Centralized handling of all company integrations",
+      "Serverless architecture for scalability and reliability",
+      "Integration layer between payment system and Oracle NetSuite",
+      "Responsible for development, maintenance, and architecture decisions in new projects"
+    ]
+  },
+  "JiveMauaPay": {
+    "backToPortfolio": "Back to Portfolio",
+    "title": "JiveMauaPay – Internal Payment System",
+    "subtitle": "Full-stack development and maintenance of the company's internal payment system",
+    "description": "I am responsible for full-stack development, maintenance, and implementing new features in JiveMauaPay, the internal payment system that processes around half a billion reais. The system centralizes and facilitates company payments, including payment approvals and spending limits. My work includes developing integrations with Oracle NetSuite ERP, Bubble, and external systems, refactoring code, optimizing performance, and automating routines.",
+    "technologiesTitle": "Technologies Used",
+    "featuresTitle": "Key Features",
+    "features": [
+      "Full-stack development and maintenance",
+      "Implementation of new functionalities and code refactoring",
+      "Integration with Oracle NetSuite, Bubble, and external systems",
+      "Payment approval workflows and spending limits",
+      "Performance optimization and automation of routines"
+    ]
+  },
+  "Suppliers": {
+    "backToPortfolio": "Back to Portfolio",
+    "title": "Supplier Management Module",
+    "subtitle": "Automated supplier registration integrated with Oracle NetSuite ERP",
+    "description": "Within the company's payment system, I developed a complete supplier registration module fully integrated with the Oracle NetSuite ERP. The module allowed registering suppliers with essential data such as name, document, bank account, and address. Previously, the IT team manually registered suppliers in both the payment system and the ERP through support tickets. My development automated this process, reducing around 25% of the support team's workload.",
+    "technologiesTitle": "Technologies Used",
+    "featuresTitle": "Key Features",
+    "features": [
+      "Front-end form with field validations for supplier data",
+      "Backend APIs for database persistence",
+      "API integration with NetSuite via AWS Step Functions",
+      "Database schema updates with new tables, columns, and triggers",
+      "Reduction of ~25% in support ticket volume"
+    ]
+  },
+  "BackgroundCheck": {
+    "backToPortfolio": "Back to Portfolio",
+    "title": "Background Check Automation",
+    "subtitle": "Automated compliance workflow for supplier risk assessment",
+    "description": "I implement a complete background check flow integrated with the company's payment system and internal intranet (Bubble.io). After a supplier is registered, the compliance team receives an automatically created record in Bubble.io via API, containing five customizable questions to assess impact, probability, and overall risk. Based on the evaluation, compliance can approve or reject the supplier directly from Bubble.io without accessing the payment system. The solution also sends daily email reminders about pending checks. This process, previously handled manually through spreadsheets, is now fully automated, resulting in an estimated 80% time savings for the compliance team.",
+    "technologiesTitle": "Technologies Used",
+    "featuresTitle": "Key Features",
+    "features": [
+      "Automatic creation of compliance records via API",
+      "Customizable risk evaluation criteria",
+      "Integration between payment system and Bubble.io intranet",
+      "Daily email reminders for pending checks",
+      "80% reduction in compliance processing time"
+    ]
+  },
+  "LoginPage": {
+    "backToPortfolio": "Back to Portfolio",
+    "title": "Video Conference Login Page",
+    "subtitle": "Access point for users to log in or sign up to the company's video conferencing system",
+    "description": "This login page was developed as part of the company's landing page, providing a seamless entry point to the internal video conferencing system. Users could log in with existing credentials or create a new account directly from the interface, ensuring quick and secure access to virtual meetings.",
+    "technologiesTitle": "Technologies Used",
+    "featuresTitle": "Key Features",
+    "features": [
+      "Integrated login and registration form",
+      "Secure authentication and data handling",
+      "User-friendly and responsive interface"
+    ]
+  }
+}

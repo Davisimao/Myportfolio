@@ -1,0 +1,141 @@
+{
+  "Index": {
+    "initialText": "Explorando novas tecnologias",
+    "name": "Davi Sanches Simão",
+    "title": "Engenheiro FullStack",
+    "subtitle": "Construindo aplicações sólidas com inovação, performance e propósito",
+    "aboutMe": "Sobre mim",
+    "aboutText1": "Sou um Engenheiro FullStack com mais de 2 anos de experiência profissional. Construo interfaces limpas, funcionais e eficientes, sempre focando em clareza, consistência e performance.",
+    "currentlyWorkAt": "Atualmente trabalho na",
+    "aboutText2": "como o principal desenvolvedor responsável pelos sistemas da empresa.",
+    "aboutText3": "Após a venda do principal sistema da empresa, assumi a gestão e evolução dos sistemas legados da empresa, tornando-me o ponto focal para todas as demandas relacionadas a sistemas e garantindo soluções escaláveis, performáticas e de fácil manutenção.",
+    "aboutText4": "Atualmente, mantenho uma meta diária de resolver desafios práticos e estudar novos temas, além de desenvolver projetos pessoais para experimentar e expandir meu conhecimento.",
+    "pastWork": "No passado, trabalhei em",
+    "companiesMessaging": "empresas de mensageria (chatbot)",
+    "whitelabelSolutions": "soluções whitelabel",
+    "pastWorkDescription": ", o que me deu uma sólida compreensão de como adaptar sistemas a diferentes restrições, sempre com foco no usuário final.",
+    "resumeLink": "Confira meu currículo",
+    "workExperience": "Experiência Profissional",
+    "projects": "Projetos",
+    "and": "e",
+    "experiences": [
+    {
+      "timeCompany": "Fev 2025 - Presente",
+      "current": "Atual",
+      "title": "FullStack Engineer Junior",
+      "companyName": "JiveMaua",
+      "description": "Responsável pela arquitetura e manutenção do API-Hub, um repositório central de integrações desenvolvido em Python que interliga todos os sistemas da empresa (NetSuite, Bubble e automações internas).",
+      "projects": [
+        {
+          "name": "API Hub – Repositório Central de Integrações",
+          "url": "/pages/projects/api-hub"
+        },
+        {
+          "name": "JiveMauaPay – Sistema Interno de Pagamentos",
+          "url": "/pages/projects/jivemauapay"
+        }
+      ]
+    },
+    {
+      "timeCompany": "Ago 2024 - Fev 2025",
+      "title": "FullStack Engineer Assistente",
+      "companyName": "JiveMaua",
+      "description": "Trabalhando no desenvolvimento e manutenção de um sistema interno de pagamentos que processou cerca de meio bilhão de reais, criado para facilitar e centralizar os pagamentos das empresas JiveMauá.",
+      "projects": [
+        {
+          "name": "Módulo de Gestão de Fornecedores",
+          "url": "/pages/projects/suppliers"
+        },
+        {
+          "name": "Automação de BackgroundCheck",
+          "url": "/pages/projects/backgroundcheck"
+        }
+      ]
+    },
+    {
+      "timeCompany": "Jun 2022 - Ago 2024",
+      "title": "Analista de Suporte Tecnico",
+      "companyName": "VIP Solutions",
+      "description": "Analise e resolução de problemas utilizando logs do software Asterisk e de sistemas operacionais Linux. Supervisão e suporte de servidores utilizando a ferramenta de monitoramento Zabbix.",
+      "projects": [
+        {
+          "name": "Página de Login para Videoconferência",
+          "url": "/pages/projects/login-page"
+        }
+      ]
+    }
+  ]
+  },
+  "ApiHub": {
+    "backToPortfolio": "Voltar ao Portfólio",
+    "title": "Sistema de Integração API-Hub",
+    "subtitle": "Repositório serverless central que gerencia todas as integrações da empresa",
+    "description": "O API-Hub é um repositório serverless responsável por tratar todos os dados e integrações da empresa. Todo tipo de integração e rotina passa por este sistema, incluindo todas as interações do sistema de pagamentos com o Oracle NetSuite: Sistema de Pagamentos → API-Hub → NetSuite. Sou responsável por desenvolver, dar manutenção e, em novos projetos, escolher a arquitetura mais adequada para implementar.",
+    "technologiesTitle": "Tecnologias Utilizadas",
+    "featuresTitle": "Principais Funcionalidades",
+    "features": [
+      "Gerenciamento centralizado de todas as integrações da empresa",
+      "Arquitetura serverless para escalabilidade e confiabilidade",
+      "Camada de integração entre sistema de pagamentos e Oracle NetSuite",
+      "Responsável pelo desenvolvimento, manutenção e decisões de arquitetura em novos projetos"
+    ]
+  },
+  "JiveMauaPay": {
+    "backToPortfolio": "Voltar ao Portfólio",
+    "title": "JiveMauaPay – Sistema Interno de Pagamentos",
+    "subtitle": "Desenvolvimento full-stack e manutenção do sistema interno de pagamentos da empresa",
+    "description": "Sou responsável pelo desenvolvimento full-stack, manutenção e implementação de novas funcionalidades no JiveMauaPay, o sistema interno de pagamentos que processa cerca de meio bilhão de reais. O sistema centraliza e facilita os pagamentos da empresa, incluindo aprovação de pagamentos e limites de alçada. Meu trabalho inclui desenvolvimento de integrações com Oracle NetSuite ERP, Bubble e sistemas externos, refatoração de código, otimização de performance e automatização de rotinas.",
+    "technologiesTitle": "Tecnologias Utilizadas",
+    "featuresTitle": "Principais Funcionalidades",
+    "features": [
+      "Desenvolvimento e manutenção full-stack",
+      "Implementação de novas funcionalidades e refatoração de código",
+      "Integração com Oracle NetSuite, Bubble e sistemas externos",
+      "Fluxos de aprovação de pagamentos e limites de alçada",
+      "Otimização de performance e automatização de rotinas"
+    ]
+  },
+  "Suppliers": {
+    "backToPortfolio": "Voltar ao Portfólio",
+    "title": "Módulo de Gestão de Fornecedores",
+    "subtitle": "Cadastro automatizado de fornecedores integrado ao ERP Oracle NetSuite",
+    "description": "Dentro do sistema de pagamentos da empresa, desenvolvi um módulo completo de cadastro de fornecedores, totalmente integrado ao ERP Oracle NetSuite. O módulo permite registrar fornecedores com dados essenciais como nome, documento, conta bancária e endereço. Antes, a equipe de TI precisava realizar o cadastro manualmente tanto no sistema de pagamentos quanto no ERP, a partir de chamados de sustentação. Essa automação reduziu cerca de 25% da demanda de chamados da área.",
+    "technologiesTitle": "Tecnologias Utilizadas",
+    "featuresTitle": "Principais Funcionalidades",
+    "features": [
+      "Formulário no front-end com validações de campos para dados do fornecedor",
+      "APIs no backend para persistência no banco de dados",
+      "Integração com o NetSuite via AWS Step Functions",
+      "Criação de novas tabelas, colunas e triggers no banco de dados",
+      "Redução de aproximadamente 25% nos chamados da sustentação"
+    ]
+  },
+  "BackgroundCheck": {
+    "backToPortfolio": "Voltar ao Portfólio",
+    "title": "Automação de Background Check",
+    "subtitle": "Fluxo automatizado de compliance para avaliação de risco de fornecedores",
+    "description": "Implemento um fluxo completo de background check integrado ao sistema de pagamentos e à intranet corporativa (Bubble.io). Após o cadastro de um fornecedor, um registro é criado automaticamente no Bubble.io via API, contendo cinco perguntas personalizáveis para avaliar impacto, probabilidade e risco. Com base nas respostas, o time de compliance pode aprovar ou reprovar o fornecedor diretamente pelo Bubble.io, sem precisar acessar o sistema de pagamentos. A solução também envia diariamente pela manhã um e-mail com fornecedores pendentes de análise. Esse processo, antes feito manualmente em planilhas, agora é totalmente automatizado, gerando uma economia de cerca de 80% no tempo do time de compliance no BackgroundCheck.",
+    "technologiesTitle": "Tecnologias Utilizadas",
+    "featuresTitle": "Principais Funcionalidades",
+    "features": [
+      "Criação automática de registros de compliance via API",
+      "Critérios de avaliação de risco totalmente personalizáveis",
+      "Integração entre sistema de pagamentos e intranet Bubble.io",
+      "Envio diário de e-mails com pendências de análise",
+      "Economia de aproximadamente 80% no tempo de processamento do compliance"
+    ]
+  },
+  "LoginPage": {
+    "backToPortfolio": "Voltar ao Portfólio",
+    "title": "Página de Login para Videoconferência",
+    "subtitle": "Ponto de acesso para usuários realizarem login ou cadastro no sistema de videoconferência da empresa",
+    "description": "Esta página de login foi desenvolvida como parte da landing page da empresa, oferecendo um ponto de entrada rápido e integrado ao sistema interno de videoconferência. Os usuários podiam acessar com credenciais existentes ou criar uma nova conta diretamente na interface, garantindo acesso seguro e ágil às reuniões virtuais.",
+    "technologiesTitle": "Tecnologias Utilizadas",
+    "featuresTitle": "Principais Funcionalidades",
+    "features": [
+      "Formulário integrado de login e cadastro",
+      "Autenticação segura e tratamento adequado de dados",
+      "Interface responsiva e fácil de usar"
+    ]
+  }
+}
